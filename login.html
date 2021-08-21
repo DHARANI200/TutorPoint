@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Login</title>
+    <style>
+         body{
+            margin: 0%;
+        }
+        
+        footer{
+            width: 100%;
+            height: fit-content;
+            background-color: greenyellow;
+            padding: 10px;
+            position: absolute;
+            
+        }
+        h2{
+            display: inline;
+            color: rgb(255, 255, 255);
+        }
+        header img{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            height: 50%;
+        }
+        .nav-link h3{
+            color: white;
+            font: 25px Raleway,Comic Sans ms,sans-serif;
+        }
+        .nav-link h3:hover{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+        #login{
+            background-color: red;
+            font-size: 20px;
+            padding: 15px 60px;
+            width: 250px;
+            cursor: pointer;
+            text-decoration: none;
+            border: white;
+        }
+        
+        .last h4{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 0, 0);
+            padding: 15px 40px 15px 40px;
+            align-items: center;
+            width: fit-content;
+        }
+        .search{
+            background-color: rgb(255, 0, 0);
+            border: rgb(0, 0, 0);
+            padding: 50px 30px;
+        }
+        .search input{
+            padding: 10px 0px 10px 10px; 
+            background-color: rgb(214, 214, 213); 
+            border: rgb(255, 255, 255); 
+            font: 20px Raleway,Comic Sans ms,sans-serif;
+            width: 100%;
+        }
+        .search button{
+            padding: 10px 20px; background-color: rgb(10, 10, 10); border: rgb(255, 255, 255); color: rgb(247, 241, 241); font: 20px Raleway,Comic Sans ms,sans-serif;
+        }
+        .register{
+            background-color: rgb(255, 0, 0);
+            padding: 50px 40px 50px 40px;
+            color: rgb(255, 255, 255);
+        }
+        .details{
+            background-color: rgb(255, 255, 255);
+            padding: 20px 30px 20px 30px;
+        }
+        .details input{
+            background-color: rgb(235, 233, 233);
+            border: rgb(255, 255, 255);
+            padding: 10px 20px 10px 30px;
+            width: 100%;
+        }
+        .details button{
+            background-color: rgb(255, 0, 0);
+            padding: 10px 30px 10px 30px;
+            color:rgb(255, 255, 255);
+            border: rgb(255, 255, 255);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img class="img-responsive" src="images/login.jpg">
+        <br><br>
+        <div class="container-fluid">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2><span>&#128213</span>TutorPoint</h2>
+                    </div>  
+                    <div class="col-lg-7">    
+                        <ul class="nav justify-content-center">                  
+                            <li class="nav-item"><a class="nav-link" href="home.html"><h3>Home</h3></a></li>    
+                            <li class="nav-item"><a class="nav-link" href="coding.html"><h3>Coding Examples</h3></a>   </li>     
+                            <li class="nav-item"><a class="nav-link" href="course.html"><h3>Courses</h3></a>      </li>
+                            <li class="nav-item"><a class="nav-link" href="login.html"><h3>Ebooks</h3></a>  </li>
+
+                        </ul>  
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="submit" id="login"><a href="login.html" style="color: white; text-decoration: none;"><strong>Login</strong></a></button> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <br><br>
+    <div class="container">
+        <a href="#" style="color: rgb(255, 255, 255);"><strong>Home</strong></a> <strong style="color: rgb(255, 255, 255);"> / </strong><a href="#" style="color: rgb(255, 0, 0);"><strong>Ebooks</strong></a>
+    </div>
+    <br><br>
+    <div class="container last">
+        <center><h4>Search your Ebook</h4></center>
+    </div>
+    
+    <div class="container search">
+        <div class="row">
+            <div class="col-lg-4">
+                <input type="text" placeholder="Course">
+            </div>
+            &nbsp;&nbsp;
+            <div class="col-lg-4">
+                <input type="text" placeholder="Category">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3">
+                <button type="submit"><strong>Search Course</strong></button>
+            </div>
+        </div>
+    
+    </div>
+        
+    
+    
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 register">
+                <h2>New Registration</h2>
+                <br><br>
+                <div class="container details">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="email" placeholder="Your E-mail">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Address">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button type="submit"><strong>Forward</strong></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5" style="padding: 50px;">
+                <h2 style="color: rgb(7, 7, 7);">Contanct Info</h2>
+                <br><br>
+                <p style="font: 15px Raleway,Comic Sans ms,sans-serif;">If any Doubt contact below</p>
+                <br>
+                <p style="color: rgb(253, 9, 9); font: 20px Raleway,Comic Sans ms,sans-serif;"><strong>Phone Line</strong></p>
+                <input type="number" disabled placeholder="+919323 324523" style="font-size: 30px; border: rgb(253, 251, 251);">
+                <br>
+                <ul style="padding: 60px 20px 0px 60px ; font: 20px Raleway,Comic Sans ms,sans-serif;">
+                    <li>17th Floor, SP Road Malabar Hills Mumbai, Maharashtra,404041
+                        Mumbai, Maharashtra,404041</li>
+                        <li>abcmail@gmail.com</li>
+                </ul>
+            </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <!--footer-->
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <b><h1 style="font-size: 40px;">TutorPoint</h1></b><br><br>
+                    Copyright ©2021 All rights reserved | Made by TutorPoint
+                </div>
+
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>ABOUT US</h5>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Company</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Our Team</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Careers</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Privacy Policy</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Cookies Policy</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Terms of use</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Investors</a></li>
+                    </ul>
+
+                </div>
+            
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>EXTRA LINKS</h5>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Articles</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Dev Tools</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Free Graphics</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> File Conversion</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Shared Tutorials</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> NetMeeting</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Whiteboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>CONTACT US</h5>
+                        <li>Address:10th Floor, VIP Road,Mumbai, Maharashtra,404041</li>
+                        <li>Website:<a href="#" style="color: blue;"> www.Tutorpoint.co</a></li>
+                    </ul>
+                </div>
+            
+
+
+            </div> 
+            <center style="color: gray;">www.tutorialspoint.com</center>
+        </footer>
+
+</div>
+</body>
+</html>

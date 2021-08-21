@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>coding examples</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        
+        footer{
+            width: 100%;
+            height: fit-content;
+            background-color: greenyellow;
+            padding: 10px;
+            position: absolute;
+            
+        }
+        h2{
+            display: inline;
+            color: rgb(255, 255, 255);
+        }
+        header img{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            height: 50%;
+        }
+        .nav-link h3{
+            color: white;
+            font: 25px Raleway,Comic Sans ms,sans-serif;
+        }
+        .nav-link h3:hover{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+        #login{
+            background-color: red;
+            font-size: 20px;
+            padding: 15px 60px;
+            width: 250px;
+            cursor: pointer;
+            text-decoration: none;
+            border: white;
+        }
+        .last h4{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 0, 0);
+            padding: 15px 40px 15px 40px;
+            align-items: center;
+            width: fit-content;
+        }
+        .search{
+            background-color: rgb(255, 0, 0);
+            border: rgb(0, 0, 0);
+            padding: 50px 30px;
+        }
+        .search input{
+            padding: 10px 0px 10px 10px; 
+            background-color: rgb(214, 214, 213); 
+            border: rgb(255, 255, 255); 
+            font: 20px Raleway,Comic Sans ms,sans-serif;
+            width: 100%;
+        }
+        .search button{
+            padding: 10px 20px; background-color: rgb(10, 10, 10); border: rgb(255, 255, 255); color: rgb(247, 241, 241); font: 20px Raleway,Comic Sans ms,sans-serif;
+        }
+        
+        * {
+  box-sizing: border-box;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="img-responsive" src="images/login.jpg">
+        <br><br>
+        <div class="container-fluid">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2><span>&#128213</span>TutorPoint</h2>
+                    </div>  
+                    <div class="col-lg-7">    
+                        <ul class="nav justify-content-center">                  
+                            <li class="nav-item"><a class="nav-link" href="home.html"><h3>Home</h3></a></li> &nbsp; &nbsp;  &nbsp; &nbsp;
+                            <li class="nav-item"><a class="nav-link" href="course.html"><h3>Courses</h3></a>      </li>&nbsp; &nbsp;  &nbsp; &nbsp;
+                            <li class="nav-item"><a class="nav-link" href="login.html"><h3>Ebooks</h3></a>  </li>
+
+                        </ul>  
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="submit" id="login"><a href="login.html" style="color: white; text-decoration: none;"><strong>Login</strong></a></button> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <br><br>
+    <div class="container">
+        <a href="#" style="color: rgb(255, 255, 255);"><strong>Home</strong></a> <strong style="color: rgb(255, 255, 255);"> / </strong><a href="#" style="color: rgb(255, 0, 0);"><strong>Coding Examples</strong></a>
+    </div>
+    <br><br>
+    <div class="container last">
+        <center><h4>Search your Ebook</h4></center>
+    </div>
+    
+    <div class="container search">
+        <div class="row">
+            <div class="col-lg-4">
+                <input type="text" placeholder="Code Name">
+            </div>
+            &nbsp;&nbsp;
+            <div class="col-lg-4">
+                <input type="text" placeholder="Category program (e.g java,c,c++)">
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3">
+                <button type="submit"><strong>Search Course</strong></button>
+            </div>
+        </div>
+    
+    </div>
+    <br><br><br>
+    <div class="container list">
+        <hr><br>
+        <h2 style="color: black;">Program List in C →</h2>
+        <br><br>
+        <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <h5>Start with Basic Programs</h5>
+                
+
+                    <ul>
+                        <li>Hello world</li>
+                        <li>Taking Input from User</li>
+                        <li>Find ASCII Value of Character</li>
+                        <li>Using gets() function</li>
+                        <li>if-Else</li>
+                        <li>Switch Case</li>
+                        <li>Checking for Vowel</li>
+                        <li>Reversing Case of Character</li>
+                        <li>Swapping Two Numbers</li>
+                        <li>Largest and smallest using Global Declaration</li>
+                    </ul>
+                
+            </div>
+        </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                    <h5>Loops</h5>
+                    <div class="container">
+                    <ul>
+                        <li>Basic <span style="color: red; font-size: 12px;">for</span> Loop</li>
+                        <li>Basic <span style="color: red; font-size: 12px;">while</span> Loop</li>
+                        <li>Basic do-while Loop</li>
+                        <li>Nested <span style="color: red; font-size: 12px;">for</span> Loops</li>
+                        <li>Program to find Factorial of number</li>
+                        <li>Fibonacci Series Program</li>
+                        <li>Palindrome Program</li>
+                        <li>Program to find Sum of Digits</li>
+                        <li>Program to reverse a String</li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                    <h5>Number Crunching</h5>
+                    <div class="container">
+                    <ul>
+                        <li>Program to find Average of <span style="color: red; font-size: 12px;">n</span> Numbers</li>
+                        <li>Armstrong Number</li>
+                        <li>Checking input number for Odd or Even</li>
+                        <li>Print Factors of a Number</li>
+                        <li>Find sum of <span style="color: red; font-size: 12px;">n</span> Numbers</li>
+                        <li>Print first <span style="color: red; font-size: 12px;">n</span> Prime Numbers</li>
+                        <li>Find Largest among <span style="color: red; font-size: 12px;">n</span> Numbers</li>
+                        <li>Exponential without <span style="color: red; font-size: 12px;">pow()</span></li>
+                        <li>Find whether number is <span style="color: red; font-size: 12px;">int </span> or <span style="color: red; font-size: 12px;">float</span></li>
+                        <li>Print Multiplication Table of input Number</li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                    <h5>Concept of Arrays</h5>
+                    <div class="container">
+                    <ul>
+                        <li>Reverse an Array</li>
+                        <li>Insert Element to Array</li>
+                        <li>Delete Element from Array</li>
+                        <li>Largest and Smallest Element in Array</li>
+                        <li>Sum of N Numbers using Arrays</li>
+                        <li>Sort Array Element</li>
+                        <li>Remove Duplicate Elements</li>
+                        <li>Sparse Matrix</p></li>
+                        <li>Square Matrix</li>
+                        <li>Determinant of 2x2 matrix</li>
+                        <li>Normal and Trace of Square Matrix</li>
+                        <li>Addition and Subtraction of Matrices</li>
+                        <li>Matrix Mulitplication</li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                    <h5>Pointers</h5>
+                    <div class="container">
+                    <ul>
+                        <li>Simple Program</li>
+                        <li>Memory Management</li>
+                        <li>Array of Pointers</li>
+                        <li>Pointer Increment and Decrement</li>
+                        <li>Pointer Comparison</li>
+                        <li>Pointer to a Pointer</li>
+                        <li>Concatenate Strings using Pointer</li>
+                        <li>Reverse a String using Pointer</li>
+                        <li>Swapping Two Numbers</li>
+                        <li>Pointer to a Function</li>
+                        <li>Null Pointer</li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                    <h5>Concept of recursion</h5>
+                    <div class="container">
+                    <ul>
+                        <li>Adding Two Numbers</li>
+                        <li>Factorial</li>
+                        <li>Fibonacci Series</li>
+                        <li>Sum of First N Numbers</li>
+                        <li>Sum of Digits</li>
+                        <li>Palindrome</li>
+                        <li>Power of N</li>
+                        <li>Largest Array Element</li>
+                        <li>Prime or Composite</li>
+                        <li>LCM of Two Numbers</li>
+                        <li>GCD of Two Numbers</li>
+                        <li>Reverse a String</li>
+                    </ul>
+                </div></div>
+                </div>
+            </div>
+    </div>    
+</div>
+    
+    <br><br><br><br>
+
+    <!--footer-->
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <b><h1 style="font-size: 40px;">TutorPoint</h1></b><br><br>
+                    Copyright ©2021 All rights reserved | Made by TutorPoint
+                </div>
+
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>ABOUT US</h5>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Company</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Our Team</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Careers</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Privacy Policy</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Cookies Policy</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Terms of use</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Investors</a></li>
+                    </ul>
+
+                </div>
+            
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>EXTRA LINKS</h5>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Articles</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Dev Tools</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Free Graphics</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> File Conversion</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Shared Tutorials</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> NetMeeting</a></li>
+                        <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Whiteboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+
+                    <ul>
+                        <h5>CONTACT US</h5>
+                        <li>Address:10th Floor, VIP Road,Mumbai, Maharashtra,404041</li>
+                        <li>Website:<a href="#" style="color: blue;"> www.Tutorpoint.co</a></li>
+                    </ul>
+                </div>
+            
+
+
+            </div> 
+            <center style="color: gray;">www.tutorialspoint.com</center>
+        </footer>
+</body>
+</html>

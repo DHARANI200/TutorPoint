@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>TutorPoint</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        
+        footer{
+            width: 100%;
+            height: fit-content;
+            background-color: greenyellow;
+            padding: 10px;
+            position: absolute;
+            
+        }
+        h2{
+            margin-left: 20%;
+            display: inline;
+            color: rgb(255, 255, 255);
+        }
+        #user{
+            background-color: rgb(228, 224, 224);
+            color: black;
+            font-size: 20px;
+            padding: 15px 10px 15px 10px;
+            width: 100%;
+            border: white;
+        }
+        #email{
+            background-color: rgb(223, 221, 221);
+            color: black;
+            font-size: 20px;
+            padding: 15px 10px 15px 10px;
+            width: 100%;
+            border: white;
+        }
+        #signup{
+            background-color: red;
+            font-size: 20px;
+            padding: 15px 10px 15px 10px;
+            width: 100%;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            border: white;
+        }
+        header img{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+        }
+        .nav-link h3{
+            color: white;
+            font: 25px Raleway,Comic Sans ms,sans-serif;
+        }
+        .nav-link h3:hover{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+
+        #login{
+            background-color: red;
+            font-size: 20px;
+            padding: 15px 60px;
+            width: 250px;
+            cursor: pointer;
+            text-decoration: none;
+            border: white;
+        }
+        .middle{
+            background-color: rgb(236, 229, 229);
+            
+        }
+        .images:hover{
+            background-color: rgb(136, 7, 7);
+        }
+        .images p{
+            color: #D82A4E;
+            font: 15px Raleway,Comic Sans ms,sans-serif;
+            padding: 0px 20px 0px 40px;
+        }
+        .images h5{
+            color: #474747;
+            margin: 0px 0px 5px;
+            font: 20px Raleway,Comic Sans ms,sans-serif;
+            padding: 20px 20px 0px 40px;
+        }
+        
+        .images:hover h5{
+            color: white;
+        }
+        .images:hover p{
+            color: white;
+        }
+        .last{
+            background-color: rgb(255, 0, 0);
+            padding: 30px 40px 30px 40px;
+            align-items: center;
+        }
+        .last h1{
+            color:white;
+            text-align: center;
+            padding: 30px 0px 30px 0px;
+        }
+        .search{
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .search input{
+            padding: 10px 0px 10px 10px; 
+            background-color: rgb(214, 214, 213); 
+            border: rgb(255, 255, 255); 
+            font: 20px Raleway,Comic Sans ms,sans-serif;
+            width: 100%;
+        }
+        .search button{
+            padding: 10px 20px; 
+            background-color: rgb(10, 10, 10); 
+            border: rgb(255, 255, 255); 
+            color: rgb(247, 241, 241); 
+            font: 20px Raleway,Comic Sans ms,sans-serif;
+        }
+        .images img{
+            width: 100%;
+        }
+        .images{
+            padding: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+<!--first part-->
+    <header>
+        <img class="img-responsive" src="images/back.jpg">
+        <br><br>
+        <div class="container-fluid">  
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2><span>&#128213</span>TutorPoint</h2>
+                </div>  
+                <div class="col-lg-6">    
+                    <ul class="nav justify-content-center">                  
+                        <li class="nav-item"><a class="nav-link" href="home.html"><h3>Home</h3></a></li>    
+                        <li class="nav-item"><a class="nav-link" href="coding.html"><h3>Coding Examples</h3></a>   </li>     
+                        <li class="nav-item"><a class="nav-link" href="course.html"><h3>Courses</h3></a>      </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><h3>Ebooks</h3></a>  </li>
+                        
+                    </ul>  
+                </div>
+                <div class="col-lg-3">
+                    <button type="submit" id="login"><a href="login.html" style="color: white; text-decoration: none;"><strong>Login</strong></a></button> 
+                </div>
+            </div> 
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <center><p style="font-size: 70px;"></br>
+                        Get The Best Free Online Courses<br>
+                        New User Sign Up Now!!<br><br>
+                        </p>
+                    </center>
+                </div>
+                </div>
+                <form action="home.html" method="POST"></form>
+                <div class="row" style="padding: 10px;">
+                    
+                    
+                        <div class="col-lg-4">
+                        <input type="text" name="user" id="user" placeholder="Name">&nbsp; &nbsp; &nbsp;
+                        </div>
+                    <div class="col-lg-4">
+                        <input type="email" name="email" id="email" placeholder="E-mail">&nbsp; &nbsp; &nbsp;
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="submit" id="signup"><strong>Sign Up Now</strong></button>
+                    </div>
+                    </form>
+                </div>
+             </div>  
+        
+    </header>
+<!--end of first part-->
+<br><br><br><br><br><br><br>
+    
+<!--middle part-->
+
+<div class="container middle">
+    <center>
+        <h1>Tutorials Library</h1>
+        <p>learn online courses from our website with easy and lucid explanation!! </p>
+    </center>
+    <br>
+    <div class="container">
+        <div class="row">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8  images">
+                <img class="img-responsive" src="images/1.jpg" alt="image">
+            
+                <h5><strong>Computer Science</strong></h5>
+                <p><strong>120 Courses</strong></p>
+
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8 images">
+                <img class="img-responsive" src="images/2.jpg" alt="image">
+            
+                <h5><strong>Web Development</strong></h5>
+                <p><strong>70 Courses</strong></p>
+
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8 images">
+                <img class="img-responsive" src="images/3.jpg" alt="image">
+
+                    <h5><strong>Programming Tutorials</strong></h5>
+                    <p><strong>55 Courses</strong></p>
+
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8 images">
+                <img class="img-responsive" src="images/4.jpg" alt="image">
+
+                    <h5><strong>Java technologies</strong></h5>
+                    <p><strong>40 Courses</strong></p>
+
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8 images">
+                <img class="img-responsive" src="images/5.png" alt="image">
+
+                    <h5><strong>Mobile Development</strong></h5>
+                    <p><strong>220 Courses</strong></p>
+
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-lg-3.8 images">
+                <img class="img-responsive" src="images/6.jpg" alt="image">
+
+                    <h5><strong>Database Tutorials</strong></h5>
+                    <p><strong>25 Courses</strong></p>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<!--end of middle part-->
+<!--last part begin-->
+<div class="container last">
+    <h1>Search your Course</h1>
+    <form>
+        <div class="container search">
+            <div class="row">
+                <div class="col-lg-4">
+                    <input type="text" placeholder="Course">
+                </div>
+                &nbsp;&nbsp;
+                <div class="col-lg-4">
+                    <input type="text" placeholder="Category">
+                </div>
+                &nbsp;&nbsp;
+                <div class="col-lg-3">
+                    <button type="submit"><strong>Search Course</strong></button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </form>
+</div>
+<br><br><br>
+<!--footer-->
+<div class="container-fluid">
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <b><h1 style="font-size: 40px;">TutorPoint</h1></b><br><br>
+                Copyright ©2021 All rights reserved | Made by TutorPoint
+            </div>
+            
+            <div class="col-md-2">
+                
+                <ul>
+                    <h5>ABOUT US</h5>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Company</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Our Team</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Careers</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Privacy Policy</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Cookies Policy</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Terms of use</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Investors</a></li>
+                </ul>
+                
+            </div>
+           
+            <div class="col-md-2">
+                
+                <ul>
+                    <h5>EXTRA LINKS</h5>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Articles</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Dev Tools</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Free Graphics</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> File Conversion</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Shared Tutorials</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> NetMeeting</a></li>
+                    <li><b><span>&#10003;</span></b><a href="#" style="color: blue;"> Whiteboard</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                
+                <ul>
+                    <h5>CONTACT US</h5>
+                    <li>Address:10th Floor, VIP Road,Mumbai, Maharashtra,404041</li>
+                    <li>Website:<a href="#" style="color: blue;"> www.Tutorpoint.co</a></li>
+                </ul>
+            </div>
+           
+            
+            
+        </div> 
+        <center style="color: gray;">www.tutorialspoint.com</center>
+    </footer>
+     
+</div>
+
+</script>
+</body>
+</html>
